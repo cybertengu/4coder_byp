@@ -92,7 +92,7 @@ CUSTOM_DOC("When column ruler is set, spaces towards that, else just inserts one
 
 
 global b32 byp_bracket_opened;
-
+/* TODO(david): This is erroring out. I will comment it out to avoid getting into a bad state, since I am not sure what this is supposed to do.
 CUSTOM_COMMAND_SIG(byp_write_text_input)
 CUSTOM_DOC("Inserts whatever text was used to trigger this command.")
 {
@@ -101,7 +101,7 @@ CUSTOM_DOC("Inserts whatever text was used to trigger this command.")
 	byp_bracket_opened = insert.str[insert.size-1] == '{';
 	write_text(app, insert);
 }
-
+*/
 CUSTOM_COMMAND_SIG(byp_auto_complete_bracket)
 CUSTOM_DOC("Sets the right size of the view near the x position of the cursor.")
 {
